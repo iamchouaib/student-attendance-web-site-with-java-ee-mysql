@@ -1,0 +1,170 @@
+@charset "ISO-8859-1";
+
+
+@font-face{
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Bold.ttf');
+    font-weight: bold;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: #fdf2f9;
+font-family: 'Work Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	color: #4f546c;
+}
+
+button, input{
+	font-family: 'Work Sans', sans-serif;
+}
+
+h3 {
+	margin: 1rem 0;
+}
+
+h6 {
+	margin: .5rem 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: .9rem;
+	line-height: 2.1rem;
+}
+
+.icon{
+	width:10rem;
+	height:10rem;	
+}
+
+.btn{
+    display: inline-block;
+border:none;
+padding:.6rem 1.5rem;	
+font-weight: 600;
+border-radius: 5px;
+transition: all 100ms linear;
+ font-size:.8rem;
+
+}
+
+.btn-green{
+background-color: #bce4bd;
+color: #2a772e;
+}
+
+.btn-yellow {
+  background-color: #fde59c;
+  color: #8d7602;
+ }
+ .btn-yellow-hollow{
+ 	background-color: transparent;
+ 	color: #8d7602;
+ 	border: 2px solid #f7d77a;
+ }
+ 
+
+.btn-red {
+  background-color: #ffcdd2;
+  color: #c62828;
+ 
+}
+
+.btn:hover , .logout:hover{
+	cursor:pointer;
+   transform: translateY(-3px); 
+  box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.2);
+}
+.btn:active , .logout:active{
+    outline: none;
+   transform: translateY(0); 
+
+}
+
+
+.card-container {
+	background-color: #fff;
+	border-radius: 5px;
+  box-shadow: 0 0px 11px 1px rgba(0,0,0,0.2);
+	color: #4f546c;
+	padding: 2.8rem;
+	position: relative;
+	width: 40%;
+	max-width: 100%;
+	text-align: center;
+}
+
+.card-container .logout {
+    background: transparent;
+    border: none;
+    padding: .4rem 1.5rem;
+    font-size: 0.8rem;
+  box-shadow: 0 0px 5px 1px rgba(0,0,0,0.4);
+  font-weight: bold;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.card-container .round {
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+
+}
+
+
+button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
+button.primary:hover{
+	cursor: pointer;
+	background-color: #02899C;
+	color: #231E39;
+}
+
+select{
+	background-color: #02899C;
+	border: 1px solid black;
+	border-radius: 3px;
+	color: #231E39;
+	font-weight: 500;
+	padding: .5rem 1rem;
+	margin: 1.2rem 0;
+}
+.logout:hover ,select:hover , .primary:hover{
+	cursor: pointer;
+	opacity: .9;
+}
+
+.pop{
+	  position:absolute;
+    top : 0 ;
+  left:50%;
+  transform: translateX(-50%);
+  color:white;
+  font-size:2rem;
+}

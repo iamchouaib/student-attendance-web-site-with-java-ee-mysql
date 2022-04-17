@@ -1,0 +1,96 @@
+@charset "ISO-8859-1";
+
+@font-face {
+	font-family: 'Work Sans';
+	src: url('../font/WorkSans-Regular.ttf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: url('../font/WorkSans-SemiBold.ttf');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: url('../font/WorkSans-Bold.ttf');
+	font-weight: bold;
+}
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+image{
+	max-width: 100%;
+}
+::selection{
+		background-color: #bce4bd;
+		color: #2a772e;
+}
+body {
+	background-image : linear-gradient( 105deg, rgba(17, 100, 41, 0.7) 0, rgba(6, 51, 19, 0.8) 55%), url("../images/ntic.jpg");
+	background-position: 0 35%;
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	color: #e7e7e7;
+	background-color: #f9fbff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Work Sans', sans-serif  !important;
+
+}
+button , input{
+		font-family: 'Work Sans', sans-serif;
+}
+.button-container{
+	display:flex;
+	gap: 3rem;
+}
+
+.body{
+	height: 62vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header{
+	margin-bottom: 4rem;
+	font-size: 5rem;	
+	max-width: 65rem;
+	text-align: center;
+	font-weight: normal;		
+}
+.button {
+	font-family: 'Work Sans', sans-serif;
+	cursor: pointer;
+	border-radius: 5px;
+background-color: #bce4bd;
+	color: #144516;
+	font-size: 1rem;
+	border: none;
+	font-weight: 600;
+	padding: 0.7rem 1.2rem;
+	margin: 0;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 2rem;
+}
+
+.button::before, .button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+

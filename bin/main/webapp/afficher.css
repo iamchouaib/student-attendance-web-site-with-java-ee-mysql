@@ -1,0 +1,164 @@
+@charset "ISO-8859-1";
+
+@font-face{
+    font-family: 'Work Sans';
+    src: url('./font/WorkSans-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Work Sans';
+    src: url('./font/WorkSans-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: 'Work Sans';
+    src: url('./font/WorkSans-Bold.ttf');
+    font-weight: bold;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+font-family: 'Work Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4f546c;
+  font-size: 0.9rem;
+  background-color: #fdf2f9;
+}
+
+h1{
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+input, button, label{
+font-family: 'Work Sans', sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 0px 11px 1px rgba(0,0,0,0.2);
+  background-color: white;
+  text-align: left;
+  overflow: hidden;
+  display:block;
+  overflow:auto;
+ max-height:50vh; 
+}
+table thead {
+  box-shadow: 0 5px 10px #e1e5ee;
+  
+  
+}
+table th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+
+}
+
+.add{
+	margin: 1.5rem 0;
+}
+
+table th{
+	background:white;
+}
+
+table thead{
+	z-index: 3;
+}
+
+
+table td, table thead {
+  padding: 1rem 2rem;
+  position:sticky;
+  top:0;
+  
+
+}
+
+
+
+table a {
+  text-decoration: none;
+  color: #2962ff;
+}
+
+.btn-yellow {
+  background-color: #fde59c;
+  color: #8d7602;
+  font-size: .8rem;
+}
+
+.btn-red {
+  background-color: #ffcdd2;
+  color: #c62828;
+  font-size: .8rem;
+}
+.amount {
+  text-align: right;
+}
+table tr:nth-child(even) {
+  background-color: #ffeef9;
+}
+
+.btn{
+    display: inline-block;
+border:none;
+padding:.6rem 1.5rem;	
+font-weight: 600;
+border-radius: 5px;
+transition: all 100ms linear;
+}
+
+.btn-green{
+background-color: #bce4bd;
+color: #2a772e;
+
+}
+
+.btn:hover , .logout:hover{
+	cursor:pointer;
+   transform: translateY(-3px); 
+  box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.2);
+}
+.btn:active , .logout:active{
+    outline: none;
+   transform: translateY(0); 
+
+}
+
+.hidden{
+display: none;
+}
+
+
+.mb{
+	  margin-bottom: 3rem;
+}
+
+.logout{
+    background: transparent;
+    border: none;
+    padding: .4rem 1.5rem;
+    font-size: 1.3rem;
+  box-shadow: 0 0px 5px 1px rgba(0,0,0,0.2);
+  font-weight: bold;
+    color: #444444;
+    margin-top: 2rem;
+}
